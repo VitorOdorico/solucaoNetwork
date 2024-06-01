@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provisionamento</title>
+    <script src="../componets/navBarLateral/navBarLateral.js" defer></script>
+    <link rel="stylesheet" href="../componets/navBarLateral/navBarLateral.css">
+    
+    <link rel="stylesheet" href="../componets/provisioning/provisioning.css">
+</head>
+
+<body>
+    <nav id="sidebar">
+        <div id="sidebarContent">
+            <div id="user">
+                <img src="../img/avatar.webp" alt="" srcset="" id="userAvatar">
+    
+                <p id="userInfos">
+                    <span class="itemDescription">
+                        Vitor Odorico
+                    </span>
+                    <span class="itemDescription">
+                        developer
+                    </span>
+                </p>
+               
+            </div>
+            <ul id="sideItens">
+                <li class="sideItem active">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                            <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
+                        </svg>
+                        <span class="itemDescription">Provisionamento</span>
+                    </a>
+                </li>
+                <li class="sideItem">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+                            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                            <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
+                        </svg>
+                        <span class="itemDescription">Fluxos</span>
+                    </a>
+                </li>
+                <li class="sideItem">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark" viewBox="0 0 16 16">
+                            <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
+                        </svg>
+                        <span class="itemDescription">Scripts</span>
+                    </a>
+                </li>
+            </ul>
+    
+            <button id="openButton">
+                <svg id="openButtonIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                  </svg>
+            </button>
+        </div>
+        <div id="logout">
+            <button id="idLogoutButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                    <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                </svg>
+                <span class="itemDescription">Sair</span>
+            </button>
+        </div>
+        
+    </nav>
+   <main>
+    <div class="container">
+        <p class="titulo">POSIÇÃO DO CLIENTE</p>    
+        <form id="">
+            <div class="boxSearchPosicion">
+                <input type="text" id="inputSlot" placeholder="Slot GPON">
+                <input type="text" id="inputPort" placeholder="Porta PON">
+                <input type="text" id="inputIndex" placeholder="Posição da ONT">
+            </div>
+
+            <p class="titulo">PESQUISAR CLIENTE</p>
+            <div class="boxsearchClient">
+                <input type="text" id="searchAlcl" placeholder="Inserir ALCL">
+                <input type="text" id="searchNome" placeholder="Inserir nome">
+            </div>
+            
+            <div class="boxButtons">
+                <button type="button" onclick="buttonPESQUISA()">pesquisar cliente</button>
+                <button type="button" onclick="buttonPESQUISAPON()">pesquisar a PON</button>    
+                <button type="button" onclick="buttonALARM()">pesquisar alarmes</button>    
+                <button type="button" onclick="reiniciarONU()">reiniciar equipamento</button>    
+                <button type="button" onclick="onuSolicitandoProvisionamento()">solicitando provisionamento</button>    
+                <button type="button" onclick="verificarFibra()">verificar fibra</button>    
+                <button type="button" onclick="desprovisionarONU()" id="unProvisioning">desprovisionar equipamento</button>   
+            </div>
+        </form>
+ 
+    </div>
+
+    <div class="container">
+        <p class="titulo">PROVISIONAR CLIENTE</p>
+        <form id="codeForm2">
+            <input type="text" id="ProvNOME" placeholder="Nome do cliente">
+            <input type="text" id="ProvALCL" placeholder="Novo ALCL">
+            <input type="text" id="ProvCAIXA" placeholder="Caixa e Porta">
+            <input type="text" id="ProvPPPOE" placeholder="Usuário PPPOE">
+            <input type="text" id="ProvPASS" placeholder="Senha PPPOE">
+            <select name="VLAN" id="ProvVLAN">
+                <option value="2800">VLAN de NOVA ANDRADINA - MS</option>
+                <option value="2710">VLAN de MANDAGUAÇU - PR</option>
+                <option value="2820">VLAN de NOVA ESPERANÇA - PR</option>
+                <option value="2714">VLAN de TERRA RICA - PR</option>
+                <option value="2821">VLAN de PAIÇANDU - PR</option>
+                <option value="2700">VLAN de PARANAVAÍ - PR</option>
+            </select> 
+            <button type="button" onclick="ProvONU()">Copiar</button>
+            <p class="titulo">ALTERAR SENHA DE ACESSO WEB</p>
+            <input type="text" id="inputAlterarAlclONU" placeholder="Adicione a senha web(ALCL) ">
+            <button type="button" onclick="alterarSenhaOnu()">Alterar senha web</button>
+        </form>
+        
+    </div>
+    
+    <div class="container">
+        <p class="titulo">CONFIGURAR REDE Wi-Fi</p>
+        <form id="codeForm3">
+            <input type="text" id="inputAlterarNomeWifi" placeholder="Nome da rede Wi-Fi">
+            <input type="text" id="inputAlterarNomeSenha" placeholder="Senha da rede Wi-Fi">
+        </form>
+        <button type="button" onclick="alterarNomeESenhaDaRede()">Alterar NOME e SENHA</button>
+        <button type="button" onclick="alterarSenhaDaRede()">Alterar somente SENHA</button>
+        
+        <p class="titulo">CONFIGURAR TELEFONE</p>
+        <p style="color: red;">em fase de testes</p>
+        <form id="codeForm3">
+            <!-- <input type="text" id="inputPortaTelefone" placeholder="Porta do telefone"> -->
+            <select name="selecionaPortaTelefonica" id="portaTelefonica" >
+                <option value="1">PORTA 1</option>
+                <option value="2">PORTA 2</option>
+               
+            </select> 
+
+            <input type="text" id="inputUsuarioSIP" placeholder="Usuário SIP">
+            <input type="text" id="inputSenhaSIP" placeholder="Senha SIP">
+            <button type="button" onclick="provisionarTelefone()">Configurar telefone</button>
+        </form>
+        
+    </div>
+    
+    <div class="container">
+        <form id="codeForm4">
+            <p class="titulo">ALTERAR VLAN E PPPOE</p>
+            <input type="text" id="inputAlterarPPPOE" placeholder="Usuário PPPOE">
+            <input type="text" id="inputAlterarSenha" placeholder="Senha PPPOE">
+            <select name="VLAN" id="ProvVLAN">
+                <option value="2800">VLAN de NOVA ANDRADINA - MS</option>
+                <option value="2710">VLAN de MANDAGUAÇU - PR</option>
+                <option value="2820">VLAN de NOVA ESPERANÇA - PR</option>
+                <option value="2714">VLAN de TERRA RICA - PR</option>
+                <option value="2821">VLAN de PAIÇANDU - PR</option>
+                <option value="2700">VLAN de PARANAVAÍ - PR</option>
+            </select> 
+            <button type="button" onclick="alterarVlanPppoe()">Alterar VLAN e PPPOE</button>
+
+            <p class="titulo">REALIZAR BRIDGE</p>
+            <p style="color: red; font-weight: bold;margin: 0 auto;">em produção, não funcional</p>
+
+            <input type="text" name="" id="" placeholder="Nome do cliente">
+            <input type="text" name="" id="" placeholder="Inserir ALCL">
+
+
+            <select name="PORTALAN" id="inptBridgeLan">
+                <option value="1">LAN 1</option>
+                <option value="2">LAN 2</option>
+                <option value="3">LAN 3</option>
+                <option value="4">LAN 4</option>
+            </select> 
+            <select name="UPSTREAM" id="inptBridgeUpstream">
+                <option value="HSO_100M_UP">HSO_100M_UP</option>
+                <option value="HSO_50M_UP">HSO_50M_UP</option>
+                <option value="HSO_20M_UP">HSO_20M_UP</option>
+                <option value="HSO_15M_UP">HSO_15M_UP</option>
+                <option value="HSI_1G_UP">HSI_1G_UP</option>
+            </select> 
+            <select name="TIPOVLAN" id="inptBridgeTipoVlan">
+                <option value="DUPLO TAG">DUPLO TAG</option>
+                <option value="COMUM">COMUM</option>
+            </select> 
+            <input type="text" name="" id="" placeholder="VLAN">
+            <input type="text" name="" id="" placeholder="CUSTUMER VLAN">
+            <button type="button" onclick=" ">realizar</button>
+        </form>
+        
+    </div>
+
+   </main>
+</body>
+</html>

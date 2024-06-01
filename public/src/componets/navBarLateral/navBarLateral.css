@@ -1,0 +1,161 @@
+@import url(../../styles/root.css);
+#userAvatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+body{
+    min-height: 100vh;
+    background: var(--colorPrimary);
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--colorSecundary);
+    height: 100vh;
+    border-radius: 0px 18px 18px 0;
+    position: relative;
+    transition: all .5s;
+    min-width: 82px;
+}
+#sidebarContent{
+    padding: 12px;
+}
+#user{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+#userInfos{
+    display: flex;
+    flex-direction: column;
+}
+
+#userInfos span:last-child{
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+#sideItens{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.sideItem{
+    padding: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.sideItem a{
+    text-decoration: none;
+    color: var(--colorPrimary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sideItem.active{
+    background-color: var(--colorTertiary);
+}
+
+.sideItem.active a{
+    color: var(--colorSecundary);
+}
+
+
+.sideItem:hover:not(.active){
+    background-color: #7d7d7d;
+}
+
+
+
+#logout{
+    border: solid 1px var(--colorPrimary);
+    padding: 12px;
+    
+}
+
+#idLogoutButton{
+    color: var(--colorTertiary);
+}
+#idLogoutButton{
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#logout:hover {
+    background-color: var(--colorPrimary);
+    border: 1px solid var(--colorSecundary);
+    border-radius: 8px;
+}
+
+#idLogoutButton:hover{
+    color: var(--colorSecundary);
+}
+#openButton{
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    background-color: var(--colorTertiary);
+    color: var(--colorSecundary);
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.itemDescription{
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    transition: width .6s;
+    height: 0px;
+}
+
+
+#sidebar.openSidebar{
+    min-width: 15%;
+}
+
+#sidebar.openSidebar .itemDescription{
+    width: 150px;
+    height: auto;
+    
+}
+
+#sidebar.openSidebar .sideItem a{
+    justify-content: flex-start;
+    gap: 14px;
+}
+
+#openButtonIcon{
+    transition: transform .3s ease;
+}
+
+.openSidebar #openButtonIcon{
+    transform: rotate(180deg);
+}
